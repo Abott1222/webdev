@@ -1,0 +1,166 @@
+<html>
+    <head>
+        
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Trello clone using flexbox </title>
+        
+    </head>
+
+    <body>
+        <header>
+            <div class="flex-navbar">
+                <div class="left ">
+
+                    <div class="boards btn">
+                        <i class="fab fa-trello"></i>
+                        <span> Boards </span>
+                    </div>
+
+                    <div class="search btn">
+                        <input id="searchInput" class="navSearch"></input>
+                    </div>
+                </div>
+
+                <div class="center">
+                    <div class="logo">
+                        <i class="fab fa-trello"></i>
+                        <span>Trello</span>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="user-settings">
+                        <div class="user-settings-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="user-settings-btn">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <div class="user-settings-btn">
+                            <i class="far fa-bell"></i>
+                        </div>
+                        <div class="user-settings-btn">
+                            <i class="far fa-user-circle"></i>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Title bar Section -->
+            <div class="title-bar">
+                <div class="left">
+                    <span class="title" draggable="true">Web Dev </span>
+                    <div class="icon-btn">
+                        <i class="far fa-star"></i> 
+                    </div>
+                    <div class="title-menu">
+                        <span> Personal</span>
+                    </div>
+                    <div class="title-menu"> 
+                        <i class="fas fa-briefcase"></i>
+                        <span> Private </span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="title-bar-menu">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <span>Show menu </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Collection of actions and todos -->
+
+            <div class="list-collection">
+                <div class="collection">
+                    <div class="collection-title">
+                        <span class="title-text">To Do</span>
+                        <i class="fas fa-ellipsis-h title-icon"></i>
+                    </div>
+                    
+                    <!-- user input -> action which is displayed here -->
+                    <div class="events">
+                        <ul>
+                            <li>
+                                <div>
+                                    <span>HTML</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>CSS</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div>
+                        <form>
+                            
+                        </form>
+                    </div>
+                </div>
+
+                <div class="collection">
+                    <div class="collection-title">
+                         <span class="title-text">Doing</span>
+                         <i class="fas fa-ellipsis-h title-icon"></i>
+                    </div>
+    
+                    <div class="events">
+    
+                    </div>
+                </div>
+
+                <div class="collection">
+                        <div class="collection-title">
+                            <span class="title-text">Done</span>
+                            <i class="fas fa-ellipsis-h title-icon"></i>
+                        </div>
+    
+                        <div class="events">
+    
+                        </div>
+                </div>
+
+                <div class="collection">
+                    <div class="collection-title">
+                            <span class="title-text">Other</span>
+                            <i class="fas fa-ellipsis-h title-icon"></i>
+                    </div>
+    
+                    <div class="events">
+        
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <span></span>
+        </footer>
+
+
+        <script>
+            window.onload = function() {
+                const $ = (selector) => document.getElementById(selector);
+                console.log("hello world");
+                let x = document.getElementById("searchInput");
+                console.log(x);
+                
+                function AddTask(event) {
+                    console.log(event);
+                }
+
+                $("task-btn");
+            }
+            //x.value = "hello world I just added this ish";
+        </script>
+    </body>
+</html>

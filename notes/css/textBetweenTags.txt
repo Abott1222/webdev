@@ -1,0 +1,7 @@
+Text Attributes
+	Properties
+		text-align: left/right/center/justify 
+		word-spacing: 4px
+		overflow-wrap: normal/break-word *signal automatic insertion of wrap to stay within container
+		text-transform: capitalize/uppercase/lowercase
+

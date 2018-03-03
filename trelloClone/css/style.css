@@ -1,0 +1,218 @@
+html,body {
+    padding: 0;
+    margin: 0;
+    height:100%;
+    background-color: #0079bf;
+}
+
+.flex-navbar {
+    display: flex;
+    background-color: rgb(26, 69, 112);
+    height: 2.5em;
+}
+
+.x > a {
+    margin-left: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    color: rgba(62, 45, 45, 0.004);
+    border-color: rgba(180, 45, 45, 0.401);
+}
+
+.flex-navbar .left, .flex-navbar .center, .flex-navbar .right {
+    display:flex;
+    width: 33%;
+}
+
+.left {
+    justify-content: flex-start;
+}
+.center {
+    justify-content: center;
+}
+.right {
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.boards, .logo {
+    display:flex;
+    font-size: 1.4em;
+    color:white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.logo {
+    font-family: cursive;
+}
+
+.logo i {
+
+    margin: auto .25em auto 0;
+    transform: scale(1.15);
+}
+
+.boards {
+    font-family: Arial, sans-serif;
+
+    display: inline;
+    background-color: rgb(50, 130, 209);
+
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 10%;
+}
+
+.search {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: .5em;
+}
+
+.user-settings {
+    color:white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-settings-btn {
+    margin-left:.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.navSearch {
+    height:60%;
+    background-color: rgb(50, 130, 209);
+    margin: .1em 0 0 0;
+    border-radius: 10%;
+    border: 1px solid transparent;
+}
+
+.btn:active, .btn:focus {   
+    border: 2px solid black;
+}
+
+
+.boards:hover, .navSearch:hover, .title:hover, .icon-btn:hover, .title-bar-menu:hover, .title-menu:hover {
+
+    background-color: rgb(114, 160, 206);
+}
+
+
+
+.right a {
+    text-decoration: none;
+}
+
+/* title bar */
+.title-bar {
+    display:flex;
+    justify-content: space-between;
+    height:2.5em;
+
+    margin-top: .35em;
+    margin-bottom: .35em
+}
+
+.title-bar .left, .title-bar .right {
+    display:flex;
+    justify-content: space-between;
+}
+
+.title-menu {
+    margin: auto 0 auto 1em;
+    color:white;
+
+}
+
+.title {
+    font-size: 1.25em;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+
+    margin: auto 0 auto 0;
+}
+
+.title-text {
+    display: flex;
+    justify-content: flex-start;
+    padding-left:1em;
+    width:50%;
+}
+
+.title-icon {
+    display:flex;
+    justify-content: flex-end;
+    padding-right: .25em;
+    width:50%;
+}
+
+
+.icon-btn {
+    margin: auto 0 auto 1.5em;
+    color:white;
+}
+
+
+.title-bar-menu {
+    color:white;
+    margin: auto 0 auto 1em;
+}
+
+
+
+/* List Collection */
+
+.list-collection {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.collection {
+    width: 17.8%;
+    height: 20em;
+    background-color: rgb(199, 204, 206);
+    margin: 0 .1em 0 1em;
+}
+
+.collection-title {
+    font-weight: bold;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    display:flex;
+    justify-content: space-around;
+}
+
+.events {
+}
+
+.events ul {
+    list-style-type: none;
+    padding-left:1em;
+}
+
+.events li div {
+    margin-bottom: 1em;
+    padding: .5em 0 .5em .25em;
+    background-color: white;
+    border-radius: 10%;
+    /* save x% for scrollbar... */
+    width:88%;
+
+}
+
+.events li div:hover {
+    background-color: rgb(211, 219, 223);
+}
+
+
+.events ul span {
+
+}
+
+
