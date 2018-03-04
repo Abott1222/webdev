@@ -76,6 +76,7 @@
             <!-- Collection of actions and todos -->
 
             <div class="list-collection">
+
                 <div class="collection">
                     <div class="collection-title">
                         <span class="title-text">To Do</span>
@@ -99,11 +100,15 @@
 
                     </div>
 
-                    <div>
-                        <form>
-                            
-                        </form>
+                    <div class="addEvent">
+                        <a href="#" id="todo todo-add-button" class="add-event-button">Add a card...</a>
+                        <div class="add-event-form">
+                            <form id="todo todo-add-form" class="hidden">
+                                    <input type="text" id="todo todo-input"/>
+                            </form>
+                        </div>
                     </div>
+                    
                 </div>
 
                 <div class="collection">
@@ -150,6 +155,52 @@
         <script>
             window.onload = function() {
                 const $ = (selector) => document.getElementById(selector);
+
+                let buttonsToAdd = document.getElementsByClassName("add-event-button");
+                for(var i=0; i<buttonsToAdd.length; i++) {
+                    buttonsToAdd[i].onclick = function(e) {
+                        var target = e.target;
+                        var target_id = target.id.split(" ")[0]
+                        switch(target_id) {
+                            case "todo":
+                                var tmpForm = $("todo todo-add-form");
+                                console.log("clicked button");
+                                console.log(target);
+                                console.log(tmpForm);
+                                tmpForm.classList.remove("hidden");
+                                target.classList.add("hidden");
+                                break;
+                        }  
+                    }
+                }
+                
+                //this needs to be changed
+                let formsToAdd = document.getElementsByClassName("add-event-form");
+                console.log(formsToAdd.length);
+                for(var i=0; i<formsToAdd.length; i++) {
+                    formsToAdd[i].onclick = function(e) {
+                        var target = e.target;
+                        console.log(target);
+                        var target_id = target.id.split(" ")[0]
+                        console.log(target_id);
+                        switch(target_id) {
+                            case "todo":
+                                var tmpButton = $("todo todo-add-button");
+                                console.log("clicked form");
+                                console.log(target);
+                                console.log(tmpButton);
+                                tmpButton.classList.remove("hidden");
+                                if(target.classList.length < 1) {
+                                    target.className += "hidden";
+                                } else {
+                                    target.classList.add("hidden");
+                                }
+                                break;
+                        }  
+                    }
+                }
+
+
                 console.log("hello world");
                 let x = document.getElementById("searchInput");
                 console.log(x);

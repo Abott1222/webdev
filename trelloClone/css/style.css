@@ -5,6 +5,11 @@ html,body {
     background-color: #0079bf;
 }
 
+.hidden {
+    display: none !important;
+    /* visibility: hidden; */
+}
+
 .flex-navbar {
     display: flex;
     background-color: rgb(26, 69, 112);
@@ -211,8 +216,16 @@ html,body {
 }
 
 
-.events ul span {
 
+.addEvent a {
+    display: inline-block;
+    text-decoration: none;
+    padding-left:1em;
+    background-color: rgb(199, 204, 206);
+}
+
+.addEvent a:hover {
+    background-color: rgb(211, 219, 223);
 }
 
 
