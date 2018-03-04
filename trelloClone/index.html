@@ -103,9 +103,9 @@
                     <div class="addEvent">
                         <a href="#" id="todo todo-add-button" class="add-event-button">Add a card...</a>
                         <div class="add-event-form">
-                            <form id="todo todo-add-form" class="hidden">
+                            <div id="todo todo-add-form" class="hidden">
                                     <input type="text" id="todo todo-input"/>
-                            </form>
+                            </div>
                         </div>
                     </div>
                     
@@ -190,10 +190,11 @@
                                 console.log(target);
                                 console.log(tmpButton);
                                 tmpButton.classList.remove("hidden");
+                                var toSwitch = $("todo todo-add-form")
                                 if(target.classList.length < 1) {
-                                    target.className += "hidden";
+                                    toSwitch.className += "hidden";
                                 } else {
-                                    target.classList.add("hidden");
+                                    toSwitch.classList.add("hidden");
                                 }
                                 break;
                         }  
